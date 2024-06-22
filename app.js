@@ -14,8 +14,6 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-app.get("/", (req, res) => { console.log("Welcome to our backend")})
-
 app.use("/api/account", accountRoutes)
 
 app.use("/api/tracks", trackRoutes)
