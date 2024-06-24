@@ -7,7 +7,7 @@ const errorHandler = require("./src/middlewares/errorHandlerMiddleware")
 const accountRoutes = require("./src/routes/accountRoutes")
 const trackRoutes = require("./src/routes/trackRoutes")
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(() => console.log("Connect Mongodb failed"))
 
