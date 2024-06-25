@@ -1,12 +1,12 @@
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
-const errorHandler = require("./middlewares/errorHandlerMiddleware")
+const errorHandler = require("../middlewares/errorHandlerMiddleware")
 const dotenv = require("dotenv").config()
 var bodyParser = require('body-parser')
 
-const accountRoutes = require("./routes/accountRoutes")
-const trackRoutes = require("./routes/trackRoutes")
+const accountRoutes = require("../routes/accountRoutes")
+const trackRoutes = require("../routes/trackRoutes")
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
