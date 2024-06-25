@@ -2,9 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "server": "nodemon app.js"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,8 +14,9 @@
     "express": "^4.19.2",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.7.0",
     "mongoose": "^8.4.3",
     "nodemon": "^3.1.4",
-    "vercel": "^34.2.7"
+    "vercel": "^32.3.0"
   }
 }
