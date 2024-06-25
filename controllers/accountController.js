@@ -11,7 +11,9 @@ const registerUser = asyncHandler(async (req, res) => {
     res.status(422)
     throw new Error("Please provide all the fields")
   }
+  
   try {
+    
     const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS)
     const user = await User.create({ email, password: hashedPassword })
     const payload = { email: user.email}
