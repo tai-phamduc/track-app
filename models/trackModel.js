@@ -8,8 +8,10 @@ const pointSchema = new mongoose.Schema({
     altitude: Number,
     accuracy: Number,
     heading: Number,
-    speed: Number
-  } 
+    speed: Number,
+    altitudeAccuracy: Number
+  },
+  mocked: Boolean
 }, { _id: false })
 
 const trackSchema = new mongoose.Schema({
